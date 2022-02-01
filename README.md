@@ -1,4 +1,4 @@
-# comp1537-lab01
+# comp1537-labs
 
 Student Name: Bryan Tran
 
