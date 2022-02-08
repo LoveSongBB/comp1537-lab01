@@ -1,32 +1,49 @@
-function say_hello() {
-    alert('Hello World')
+function calculate_area() {
+    r = parseInt(jQuery("#x").val()) ;
+
+    jQuery("#p1").html(r * r * 22/7)
+
 }
+
 
 function setup() {
-    jQuery('#p1').click(say_hello)
-}
-
-
-
-function f(){
-    jQuery('#x').html("annadgojagnagjadg");
+    jQuery("#calc").click(calculate_area);
 
 }
 
-function setup() {
-    jQuery('#p2').click(f)
-}
+jQuery(document).ready(setup);
 
 
-function add_f(){
-    x = jQuery('#potato').html();
 
-    y = jQuery('#potato').html()
-
-    console.log('#p1').html(parseInt(x) + parseInt(y));
-}
-
-jQuery(document).ready(say_hello);
+//function say_hello() {
+//    alert('Hello World')
+//}
+//
+//function setup() {
+//    jQuery('#p1').click(say_hello)
+//}
+//
+//
+//
+//function f(){
+//    jQuery('#x').html("annadgojagnagjadg");
+//
+//}
+//
+//function setup() {
+//    jQuery('#p2').click(f)
+//}
+//
+//
+//function add_f(){
+//    x = jQuery('#potato').html();
+//
+//    y = jQuery('#potato').html()
+//
+//    console.log('#p1').html(parseInt(x) + parseInt(y));
+//}
+//
+//jQuery(document).ready(say_hello);
 //function f(x){
 //    alert(x)
 //}
