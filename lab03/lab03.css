@@ -19,6 +19,8 @@
       color: purple;
 }
 
+/*  CSS.HTML CSS */
+
       #top-bar-title{
         margin: 0px;
       }
@@ -35,8 +37,8 @@
         padding: 10px;
       }
       #side-bar ul{
-        list-style-type: none;
         padding: 0px;
+        list-style-type: none;
       }
       #main-div{
         background-color: LightSkyBlue;
@@ -46,12 +48,13 @@
         padding: 10px;
       }
       #main-div-img{
-      width: 30%;
       width:250px;
       height:250px;
       margin-left:15px;
       float: right;
+      width: 30%; /* Adding width 30%; here makes it wider but not about width 250px; */
       }
+
       #bot-bar{
         text-align: center;
         background-color: RoyalBlue;
