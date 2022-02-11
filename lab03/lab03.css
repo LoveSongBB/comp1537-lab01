@@ -1,0 +1,51 @@
+.container{
+      background-color: white;
+      border: 5px black solid;
+      padding: 5px;
+      }
+
+.heading {
+      color: blue;
+}
+.title {
+      color: red;
+}
+
+.paragraph_1 {
+      color: green;
+}
+
+.paragraph_2 {
+      color: purple;
+}
+      #top-bar-title{
+        margin: 0px;
+      }
+      #top-bar{
+        background-color: CornflowerBlue;
+        color: black;
+        text-align: center;
+      }
+      #side-bar{
+        background-color:LightBlue;
+        width: 30%;
+        float: left;
+        height: 400px;
+        padding: 10px;
+      }
+      #side-bar ul{
+        list-style-type: none;
+        padding: 0px;
+      }
+      #main-div{
+        background-color: LightSkyBlue;
+        width: 70%;
+        float: left;
+        height: 400px;
+        padding: 10px;
+      }
+      #bot-bar{
+        text-align: center;
+        background-color: RoyalBlue;
+        color: black;
+      }
