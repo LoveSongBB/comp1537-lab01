@@ -1,0 +1,117 @@
+/* step 1 - Design the Divisions Left width: 75% Right width: 25% -- Footer
+   step 2 - Top-bar H1 / Links = A / Cards = H2 + H5 + p / Footer = H2
+   step 3 - CSS Colours - Top Nav f2f2f2 / body f1f1f1 / cards = a2b9bc / top nav = 333
+   step 4 - css boxmodel - body padding 10px / topnav a padding top 14px + padding bottem 14px + padding left 16px + padding right 16px + display block
+   right card div padding-left: 10px / right card padding 20px / card margin-top 20px /
+   * rest all h1,h2,h3 div = margin 0px / box sizing: border-box
+   step 5 - fonts - font family ariad - text align center - topnav a text decortation: none
+   step 6- responsive cards - wide screen >600px left card 70% right card 30%
+   non-wide screen left card width =100% right card width = 100%
+   @media scree and max-width: 600px left card, right card, width = 100%
+   step 7 - nav-bar overflow: hidden nav-bar a float left display:block
+   smaller screens <300 px @media screen and max width:300px top nav a float:none; imgs = 100% */
+
+
+/* step 4 */
+*{
+box-sizing: border-box;
+}
+/* step 4 */
+h1, h2, h3, div{
+margin: 0px;
+}
+
+body{
+background-color: #FFBC80;
+padding:10px;
+/* step 5 */
+font-family: Arial, sans-serif;
+}
+
+#top-bar{
+background-color: #F76E11;
+overflow: auto;
+padding-top: 15px;
+/* step 5 */
+text-align: center;
+}
+
+
+#nav-bar{
+background-color: #FF9F45;
+overflow: hidden;
+}
+
+#link-right{
+float: right !important;
+}
+
+#nav-bar a{
+/* step 4 */
+padding-bottom: 14px;
+padding-top: 14px;
+padding-left: 16px;
+padding-right: 16px;
+display: block;
+float: left;
+text-align: center;
+/* step 3 */
+color: #F2F2F2;
+/* step 5 */
+text-decoration: none;
+}
+
+#nav-bar a:hover{
+/* step 3 */
+background-color: #F2F2F2;
+color: #333;
+}
+
+#left_cards{
+/* step 1 */
+width: 70%;
+float: left;
+}
+
+#right_cards{
+/* step 4 */
+padding-left: 10px;
+margin-bottom: 10px;
+/* step 1 */
+width: 30%;
+float: right;
+}
+
+.card{
+background-color: #FF9F45;
+/* step 4 */
+padding: 20px;
+margin-top: 20px;
+}
+
+#footer{
+clear: both;
+background: #FC4F4F;
+overflow: auto;
+padding: 15px;
+/* step 5 */
+text-align: center;
+}
+/* step 6 */
+@media screen and (max-width: 600px){
+    #right_cards, #left_cards{
+    width: 100%;
+    }
+        #right_cards{
+        padding-left: 0px;
+        }
+}
+/* step 7 */
+@media screen and (max-width:300px) {
+    #nav-bar a{
+    float: none !important;
+    }
+        .card img{
+        width: 100% !important;
+        }
+}
