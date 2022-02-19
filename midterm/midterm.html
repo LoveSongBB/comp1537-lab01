@@ -6,15 +6,40 @@
         body {
             margin: 0px;
         }
-
+        header{
+            width:100%;
+              font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: .02em;
+  line-height: 1.7em;
+  text-transform: none;
+  color: rgba(23,23,23,.8);
+}
+            }
         nav {
 
-            background-color: #333;
+            background-color: #FFFFFF;
             overflow: hidden;
+            box-sizing: border-box;
 
+            }
+        #middle-title{
+            content-align: center;
 
         }
-
+        #head1{
+        padding-top: 55px;
+padding-bottom: 55px;
+            display:flex;
+            box-sizing: border-box;
+padding-left: 16px;
+padding-right: 16px;
+align-items: center;
+text-align: center;
+justify-content: center;
+        }
         main {
             /* float: left; */
             /* width: 80%; */
@@ -30,34 +55,151 @@
             width: 33%;
             float: left;
             padding: 10px;
-
-
-
         }
+           #top-left{
+           flex: 1;
+           justify-content: flex-start;
+           text-align: left;
+           align-items: center;
+           min-width: 0;
+            max-width: 100%;
+            flex: 1 !important;
+           }
+
+           #top-right{
+                      flex: 1 1 0px;
+           justify-content: flex-end;
+           text-align: right;
+           align-items: center;
+           min-width: 0;
+            max-width: 100%;
+            flex: 1 !important;
+
+           }
+
+           #bot{
+           padding-bottom: 17px !important;
+           padding-top: 17px !important;
+           padding-left: 17px;
+padding-right: 17px;
+position: relative;
+clear: none;
+height: auto;
+           }
+
+           middle-title{
+display:flex;
+flex: 1 1 0px;
+align-items: center;
+flex-direction: column;
+text-align: center;
+justify-content:center !important;
+           }
         img{
             border-radius: 5px;
         }
 
-        #center {
-            margin: 0 auto;
-            width: 90%;
+<!--        #center {-->
+<!--            margin: 0 auto;-->
+<!--            width: 90%;-->
+<!--        }-->
+
+        #middle{
+        margin-top:0;
+        text-align: center;
+white-space: pre-wrap;
+        position: relative;
+height: auto;
+padding-top: 17px;
+padding-bottom: 17px;
+        font-family: proxima-nova;
+font-weight: 300;
+font-style: normal;
+font-size: 16px;
+letter-spacing: .02em;
+line-height: 1.7em;
+text-transform: none;
+color: rgba(23,23,23,.8);
+
+
+        }
+
+        #mid1 img{
+        width: 33.3333%;
+        float:left;
+        }
+
+        #mid2{
+        width: 33.3333%;
+        float: left;
+
+        }
+
+
+        #mid2 p {
+        font-family: adobe-garamond-pro;
+font-weight: 400;
+font-style: normal;
+font-size: 25px;
+letter-spacing: .01em;
+line-height: 1.4em;
+text-transform: none;
+padding:10%;
+}
+
+#mid2 h3 {
+        margin-top:0;
+        text-align: center;
+white-space: pre-wrap;
+        position: relative;
+height: auto;
+padding-top: 17px;
+padding-bottom: 17px;
+        font-family: proxima-nova;
+font-weight: 300;
+font-style: normal;
+font-size: 16px;
+letter-spacing: .02em;
+line-height: 1.7em;
+text-transform: none;
+color: rgba(23,23,23,.8);
+
+
+        }
+
+        #mid3 img{
+        width: 33.3333%;
+        float: left;
+        padding-right: 0;
         }
 
         .clearfix {
             overflow: hidden;
+            width: auto !important;
         }
 
-        .clearfix::after {
-            clear: both;
 
-        }
+        #footer{
+clear: both;
+background: #FC4F4F;
+overflow: auto;
+padding: 15px;
+/* step 5 */
+text-align: center;
+text-decoration: none;
+}
+
+<!--        .clearfix::after {-->
+<!--            clear: both;-->
+
+<!--        }-->
 
         nav a {
             display: block;
             float: left;
             padding: 10px;
 
-            color: #f2f2f2;
+            color: #000000;
             text-decoration: none;
 
             padding: 14px 16px;
@@ -66,7 +208,7 @@
         }
 
         nav a:hover {
-            background-color: f2f2f2;
+            background-color:#F3F3F3;
             color: #333;
         }
 
@@ -100,16 +242,30 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+                @media screen and (max-width: 550px) {
+            #mid2 mid1 {
+                width: 100%;
+                float: none;
+                padding: 10px 0px 10px 0px;
+            }
+            #center{
+                width: 100%;
+            }
+            nav a{
+                width: 100%;
+                float: none !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>
-            Responsive Web Gallery
-        </h1>
-    </header>
+<div id="head1">
+    <div id="top-left">
     <nav>
+        <div>
 
         <a href="">
             Link 1
@@ -122,76 +278,79 @@
         <a href="">
             Link 3
         </a>
-
+        </div>
+        </nav>
+    </div>
+        <div id ="middle-title">
+            <a >
+                LEONADRO DA VINCI
+            </a>
+    </div>
+    <div id = "top-right"></div>
+    <nav>
         <a href="" style="float: right;">
+            Link 4
+        </a>
+                <a href="" style="float: right;">
+            Link 4
+        </a>
+                <a href="" style="float: right;">
             Link 4
         </a>
 
 
     </nav>
+    </div>
+</div>
+        </header>
     <main>
+        <div id="middle">
+    <h1> Lorem Title Center </h1>
+            <h3>- THE NEW YORK TIMES</h3>
+        </div>
 
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid ratione doloremque excepturi
+
+
+            <div id="center">
+                <div id="mid1">
+                    <a href="" target="_blank"></a>
+                <img class="x" src="../images/lady-painting.jpg" style="width=33%;">
+                </div>
+                <div id="mid2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid ratione doloremque excepturi
             qui
             quisquam quam esse deleniti. Blanditiis recusandae unde enim velit doloribus aperiam sed neque minima
             nam
             laborum.
         </p>
 
-        <div class="clearfix">
-            <div id="center">
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/350/" alt="Italy" style="width:100%">
+                    <h3>
+                        - BY BRYAN TRAN
+                    </h3>
                 </div>
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/353/" alt="Forest" style="width:100%">
+                                <div id="mid3">
+                    <a href="" target="_blank"></a>
+                <img class ="x" src="../images/lady-painting.jpg">
                 </div>
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/349/" alt="Mountains" style="width:100%">
-                </div>
-            </div>
-        </div>
 
-        <div class="clearfix">
-            <div id="center">
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/351/" alt="Italy" style="width:100%">
-                </div>
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/352/" alt="Forest" style="width:100%">
-                </div>
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/354/" alt="Mountains" style="width:100%">
-                </div>
             </div>
-        </div>
 
-        <div class="clearfix">
-            <div id="center">
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/356/" alt="Italy" style="width:100%">
-                </div>
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/355/" alt="Forest" style="width:100%">
-                </div>
-                <div class="img-container">
-                    <img src="https://picsum.photos/536/357/" alt="Mountains" style="width:100%">
-                </div>
-            </div>
-        </div>
+<!--        <div id="bot">-->
+<!--            <p> loremLorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid ratione doloremque excepturi-->
+<!--            qui-->
+<!--            quisquam quam esse deleniti. Blanditiis recusandae unde enim velit doloribus aperiam sed neque minima-->
+<!--            nam-->
+<!--            laborum. </p>-->
+<!--        </div>-->
+
     </main>
-    <footer>
-        <!-- <h1>.</h1> -->
-        <h5>
-            Copyright © Your Website 2022
-        </h5>
-        <div>
-            <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/96/iconmonstr-twitter-3.png" alt="" width="50px" height="50px">
-            <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2016/96/iconmonstr-instagram-11.png" alt="" width="50px" height="50px">
-            <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/96/iconmonstr-facebook-4.png" alt="12" width="50px" height="50px">
+        <div id="footer">
+            <h3>
+
+                <a href="" target="_blank"> READ MORE WIKI </a>
+            </h3>
         </div>
-    </footer>
 
 
 
