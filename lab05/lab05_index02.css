@@ -1,0 +1,112 @@
+         * {
+            box-sizing: border-box;
+        }
+        header {
+            padding: 15px;
+            background-color: #65C18C;
+        }
+
+        body {
+
+            background-color: #FF7BA9;
+            margin: 0px;
+        }
+
+        nav {
+
+            overflow: hidden;
+            background-color: #C1F4C5;
+
+        }
+
+        #right-link {
+            float: right !important;
+        }
+
+
+        main {
+            padding: 15px;
+            background-color: #FFBED8;
+        }
+
+        .img-containers {
+            width:33.3%;
+            padding: 10px;
+            float: right;
+
+        }
+
+        img{
+            border-radius: 20px;
+        }
+
+        .center-div {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-hidden::after {
+            clear: both;
+
+        }
+
+        footer{
+            background-color: #FF7BA9;
+        }
+
+        .footer-icon{
+            width: 50px;
+            height: 50px;
+        }
+
+        nav a {
+            color:  #000000 ;
+            padding: 15px;
+            display: block;
+            float: left;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: f2f2f2;
+            color: #33333;
+        }
+
+        @media screen and (max-width: 550px) {
+            .img-containers {
+                width: 100%;
+                float: none;
+                padding: 10px 0px 10px 0px;
+            }
+            .center-div{
+                width: 100%;
+            }
+            nav a{
+                width: 100%;
+                float: none !important;
+            }
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        footer,
+        header {
+            text-align: center;
+        }
+
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img-containers img{
+            width: 100%;
+
+        }
