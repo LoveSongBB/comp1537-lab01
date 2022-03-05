@@ -1,0 +1,65 @@
+    *{
+
+        background-color: #7DDF7B;
+    }
+
+    #input-2{
+
+        background-color: #FFF;
+    }
+
+
+    #input-1{
+
+        background-color: #FFF;
+    }
+
+    #input-div{
+
+        padding: 25px;
+    }
+
+    #history-div{
+
+        padding: 25px;
+    }
+
+    #result-div{
+
+        padding: 25px;
+    }
+
+    #button-div{
+
+        padding:25px;
+    }
+
+    .operator-button{
+
+        background-color: #FFF;
+        margin: 5px;
+        padding:15px;
+    }
+
+
+    #add-answer {
+
+      background-color: #E9EF95;
+    }
+
+    #division-answer {
+
+      background-color: #5DB0E9;
+    }
+
+     #multiply-answer {
+
+      background-color: #E9A35D;
+    }
+
+    #sub-answer {
+
+      background-color: #E67474;
+    }
+
+
