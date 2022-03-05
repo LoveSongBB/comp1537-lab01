@@ -1,4 +1,6 @@
-# comp1537-labs
+BCIT - CST 
+
+COMP-1537
 
 Student Name: Bryan Tran
 
