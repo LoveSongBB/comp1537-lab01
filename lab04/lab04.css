@@ -13,8 +13,8 @@
 
 
 /* step 4 */
-*{
-box-sizing: border-box;
+    * {
+    box-sizing: border-box;
 }
 /* step 4 */
 h1, h2, h3, div{
