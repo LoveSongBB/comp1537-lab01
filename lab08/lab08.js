@@ -3,7 +3,6 @@ function setup() {
    $("body").on("click",".backdrop_button" ,display_back_drop)
 }
 
-
 function movie_api(){
     value = $("#movie_title").val();
     $.ajax({
@@ -12,15 +11,12 @@ function movie_api(){
         "success": movie
     })
 }
+
 function movie(data) {
-
     for (i = 0; i < data.results.length; i++) {
-
         $("#result").append("<h2>" + data.results[i].original_title + "</h2" + '<br>' );
-
         $("#result").append('<p>' + data.results[i].overview + '</p>' + "<br>");
         path = data.results[i].poster_path
-
         buttons = `<button id="${data.results[i].backdrop_path}" class="backdrop_button"> Backdrop Image</button>`;
         $("#result").append("<div id='backdrop-img'>" + buttons);
         image_html =`<div class="image-container"> <img src='https://image.tmdb.org/t/p/w500/${path}'> </div>`
