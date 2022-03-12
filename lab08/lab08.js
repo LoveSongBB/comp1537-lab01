@@ -1,6 +1,5 @@
 function setup() {
    $("#movie_information").click(movie_api)
-    // $("body").click(()=>{alert()});
    $("body").on("click",".backdrop_button" ,display_back_drop)
 }
 
