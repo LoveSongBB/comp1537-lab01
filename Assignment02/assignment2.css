@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    padding: 15px;
+
+}
+
+.backdrop_button{
+    margin: 15px;
+    padding: 15px;
+}
+
+p {
+
+}
+
+#backdrop-img{
+
+    width: 50%;
+    float:right;
+}
+
+header h1{
+
+        text-align: center;
+}
+
+body {
+
+    background-color: #ECC392;
+}
+
+main {
+        text-align: center;
+}
+
