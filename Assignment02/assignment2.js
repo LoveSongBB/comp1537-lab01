@@ -113,17 +113,6 @@ function first(){
 }
 
 
-function last(){
-
-    $("#results").html(`<h1> Page ${number_of_pages}</h1>`)
-    current_page_id = number_of_pages;
-
-    $("#next").show();
-    $("#prev").show();
-
-}
-
-
 function next(){
 
     if(current_page_id < number_of_pages)
@@ -139,6 +128,17 @@ function prev(){
         current_page_id--;
 
     $("#results").html(`<h1> Page ${current_page_id}</h1>`)
+
+}
+
+
+function last(){
+
+    $("#results").html(`<h1> Page ${number_of_pages}</h1>`)
+    current_page_id = number_of_pages;
+
+    $("#next").show();
+    $("#prev").show();
 
 }
 
