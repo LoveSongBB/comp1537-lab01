@@ -59,7 +59,7 @@ function fetch_movie(data) {
         $("#results").append("<p>" + data.results[i].overview + "</p>");
 
         img_path = data.results[i].poster_path
-        image_html =`<img src='https://image.tmdb.org/t/p/w500/${img_path}'>`
+        image_html =`<img id='image-poster' src='https://image.tmdb.org/t/p/w500/${img_path}'>`
         $("#results").append(image_html + "<br>");
 
         backdrop_button = `<button id="${data.results[i].backdrop_path}" class="backdrop_button"> backdrop image!</button>`
