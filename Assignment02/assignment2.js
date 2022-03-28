@@ -35,7 +35,7 @@ function paginate_row(){
 }
 
 
-function fetch_movie(data) {
+function fetch_movie(data){
 
     movie_data = data;
     $("#last").show();
@@ -46,7 +46,7 @@ function fetch_movie(data) {
 //    console.log(page_size)
 //    console.log(null * -1)
 
-    for (i = Math.abs(start_index) ; i < end_index; i++) {
+    for (i = Math.abs(start_index) ; i < end_index; i++){
 //        console.log(length)
 //        console.log(data.page)
 //        console.log(start_index)
@@ -81,7 +81,7 @@ function drop_down_menu_has_changed(){
 }
 
 
-function display_back_drop() {
+function display_back_drop(){
 
     image_value = $(this).attr("id");
 //    console.log(`<img src="https://image.tmdb.org/t/p/original${image_value}" width="100"%>`);
@@ -143,7 +143,7 @@ function last(){
 }
 
 
-function setup() {
+function setup(){
 
    $("#find_movie_info").click(call_ajax);
 
