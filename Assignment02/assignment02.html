@@ -1,24 +1,61 @@
 <html>
+
     <head>
-        <title> Assignment 2 Movie Finder</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="assignment2.js"></script>
         <link rel="stylesheet" href="assignment2.css">
+        <title>
+            Assignment 2 Movie Finder
+        </title>
     </head>
-    <header>
-        <h1> Assignment 2 Movie Finder </h1>
-    </header>
+
+    <!-- LAYOUT FROM LAB -->
     <body>
-        <main>
-            Enter movie title
-            <input type="text" id="movie_title" placeholder="..."  />
-            <button id="movie_information"  >Search</button>
-            <div id="result">
-            </div>
-        </main>
+    <h1>Assignment 2</h1>
         <div style="padding:50px;">
-            <a href="../index.html">Go back to the Home page!</a>
+            <button id="return-button">
+            <a href="../index.html">Go back to the Home page!</a></button>
         </div>
+    <div id="left-side">
+
+        <header>
+            <article>
+                <div id="drop-list">
+                    <h3 id="page-title"> Page Size </h3>
+                    <select name="page_size" id="page_size">
+                        <option value="3">Display 3 Movies</option>
+                        <option value="5">Display 5 Movies</option>
+                        <option value="10">Display 10 Movies</option>
+                        <option value="20">Display 20 Movies</option>
+                    </select>
+                </div>
+                <h3> Enter movie title </h3>
+                <div id="search_box">
+                <input type="text" id="movie_name" />
+                <button id="find_movie_info">Search</button>
+                    </div>
+                <div id="button-row">
+                    <div id="left-buttons">
+                        <button id="first"> First </button>
+                        <button id="prev"> Prev </button>
+                    </div>
+                    <div id="numbered_buttons_id">
+
+                    </div>
+                    <div id="right-buttons">
+                        <button id="next"> Next </button>
+                        <button id="last"> Last </button>
+                    </div>
+                </div>
+                <div id="results">
+
+                </div>
+            </article>
+        </header>
+    </div>
+        <article id="right_side">
+
+        </article>
+
     </body>
 </html>
-
