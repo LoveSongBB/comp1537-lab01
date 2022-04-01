@@ -17,8 +17,9 @@ function movie(data) {
         $("#result").append("<h2>" + data.results[i].original_title + "</h2" + '<br>' );
         $("#result").append('<p>' + data.results[i].overview + '</p>' + "<br>");
         path = data.results[i].poster_path
+        value = data.results[i].backdrop_path
         buttons = `<button id="${data.results[i].backdrop_path}" class="backdrop_button"> Backdrop Image</button>`;
-        $("#result").append("<div id='backdrop-img'>" + buttons);
+        $("#result").append("<div id='backdrop-img'>" + buttons + "<div id='backdrop'>" + "</div>" + "</div>" );
         image_html =`<div class="image-container"> <img src='https://image.tmdb.org/t/p/w500/${path}'> </div>`
         $("#result").append(image_html);
     }
@@ -27,7 +28,7 @@ function movie(data) {
 function display_back_drop() {
     value = $(this).attr("id");
     console.log(`<img src="https://image.tmdb.org/t/p/original${value}" width="75%">`);
-    $("#backdrop-img").html(`<img src="https://image.tmdb.org/t/p/original${value}" width="75%">`)
+    $("#backdrop").html(`<img src="https://image.tmdb.org/t/p/original${value}" width="75%">`)
 
 }
 
