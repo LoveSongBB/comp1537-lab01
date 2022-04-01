@@ -1,12 +1,7 @@
 // CODE ASSISTANCE FROM LAB / VIDEO HINTS
 
-page_size = null;
+
 current_page_id = 1;
-number_of_pages = null;
-page_size = null;
-movie_data = null;
-start_index = null;
-end_index = null;
 
 
 function call_ajax(){
